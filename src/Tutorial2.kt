@@ -1,16 +1,28 @@
 fun main(args: Array<String>) {
-    val a = 5
-    val b = 8
+    val hello = "Hello World!"
+    println(hello)
 
-    val s = sum(a, b)
-    println("a + b = $s")
+    // val i: Int = 10
+    val i = 20
 
-    val s2 = sum2(a, b)
-    println("a + b = $s2")
+    val s = "hogehoge"
+
+    // val num = 0
+    // num = 1 <- Error
+
+    var num = 0
+    num = 1 // <- OK
+
+    val a = 100
+    val b = 50
+
+    // 普通にprintln()を使って出力できます
+    println(a)
+    println(a + b)
+
+    // 文字列の途中に変数を入れることもできます
+    println("a + b = ${a + b}")
+
+    // ${}の中が一つの場合$だけに省略できます
+    println("a = $a")
 }
-
-fun sum(a: Int, b: Int): Int {
-    return a + b
-}
-
-fun sum2(a: Int, b: Int) = a + b
